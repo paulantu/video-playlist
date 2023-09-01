@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.d1-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d1-channel-name,
+.d1-logo,
+.d1-channel-info{
+    width: 33.33%;
+}
+.d1-logo img{
+    width: 150px;
+    border: 2px solid #A6CE39;
+    border-radius: 50%;
+    padding: 20px;
+}
+.d1-channel-info{
+    padding-left: 100px;
+}
+.d1-subscription,
+.d1-like,
+.d1-view{
+    padding: 5px 15px;
+}
+.d1-subscribe-button a{
+    padding: 5px 15px;
+    border: 1px solid #FF0000;
+    border-radius: 10px;
+    color: #FF0000;
+}
+
+.d1-subscribe-button a:hover{
+    transition: 0.5s;
+    transform: scaleY(1.2);
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
+.d1-subscription svg,
+.d1-like svg,
+.d1-view svg{
+    color: #0053A4;
+}
+
+@media (max-width:991px){
+    .d1-channel-info{
+        padding-left: 0px;
+    }
+}
+
+@media (max-width:768px){
+    .d1-channel-info{
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width:652px){
+    .d1-channel-name h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .d1-subscribe-button a,
+    .d1-subscribe-button svg{
+        font-size: 10px;
+    }
+    .d1-logo img{
+        width: 70px;
+        border: 2px solid #A6CE39;
+        border-radius: 50%;
+        padding: 20px;
+    }
+    .d1-subscription span,
+    .d1-like span,
+    .d1-view span,
+    .d1-subscription svg,
+    .d1-like svg,
+    .d1-view svg{
+        font-size: 9px;
+    }
+    .d1-subscription,
+    .d1-like,
+    .d1-view{
+        padding: 0px;
+    }
+    .d1-like,
+    .d1-view{
+        margin-top: -6px;
+    }
+}

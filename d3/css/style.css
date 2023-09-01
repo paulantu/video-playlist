@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: white;
+}
+.d3-channel-name a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
+.d3-channel-info-right{
+    display: flex;
+    align-items: center;
+}
+.d3-channel-likes,
+.d3-subscribers,
+.d3-views{
+    border: 1px solid grey;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.d3-feature-img {
+    width: 100%;
+}
+.d3-playBtn{
+    position: relative;
+    left: 75px;
+    bottom: 90px;
+    width: 70px;
+}
+.d3-video-listing-content{
+    margin-top: -80px;
+}
+.d3-like-comment-view-live-count{
+    margin-top: -15px;
+    display: flex;
+}
+.d3-like-count,
+.d3-comment-count{
+    margin-right: 15px;
+}
+
+
+
+
+/* new style */
+
+@media only screen and (min-width : 320px) {
+    .d3-channel-likes span,
+    .d3-subscribers span,
+    .d3-views span{
+        display: none;
+    }
+    .d3-playBtn{
+        left: 115px;
+        bottom: 112px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 414px) {
+    .d3-playBtn{
+        left: 138px;
+        bottom: 118px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 767px) {
+    .d3-playBtn{
+        left: 42px;
+        bottom: 48px;
+        width: 35px;
+    }
+    .d3-video-listing-content{
+        margin-top: -50px;
+    }
+    .d3-video-listing-content p{
+        font-size: 13px;
+    }
+    .d3-like-comment-view-live-count{
+        font-size: 10px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .d3-playBtn{
+        left: 75px;
+        bottom: 90px;
+        width: 70px;
+    }
+    .d3-video-listing-content{
+        margin-top: -80px;
+    }
+}
+
